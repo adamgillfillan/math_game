@@ -1,6 +1,9 @@
 ﻿#pragma strict
 
 function Start () {
-	// Set the text of the attached Text mesh
-	GetComponent(TextMesh).text = "4 + 6";
+	var randomnumber1 = Random.Range(1, 10);
+	var randomnumber2 = Random.Range(1, 10);
+
+
+	GetComponent(TextMesh).text = randomnumber1 + " + " + randomnumber2;
 }
