@@ -1,15 +1,10 @@
 ﻿#pragma strict
 
-function Start(){
-	get_math_problem_answer();
-}
 function get_math_problem_answer() {
 	var math_answer_object : GameObject;
 	var math_answer : int;
 	var math_answer_object_text : String;
 	
-	
-	math_answer_object = GameObject.FindWithTag("MathProblem");
 	math_answer_object_text = math_answer_object.GetComponent(TextMesh).text;
 	var split : String[] = math_answer_object_text.Split("+"[0]);
 	//var value1 : int = parseInt(split[0]);
