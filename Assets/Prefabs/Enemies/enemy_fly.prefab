@@ -13,7 +13,7 @@ GameObject:
   - 114: {fileID: 11400004}
   m_Layer: 0
   m_Name: math_problem
-  m_TagString: Untagged
+  m_TagString: MathProblem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.19162607, y: 11.8143291, z: 0}
+  m_LocalPosition: {x: -.56807816, y: 12.9649057, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 0}
   m_Children:
   - {fileID: 400000}
@@ -163,6 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ac02415774ed5b44b8fd1d17c6c4c8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  answer_int: 0
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
