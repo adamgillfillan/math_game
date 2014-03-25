@@ -3,7 +3,7 @@
 var enemy_fly : GameObject;
 
 function Start () {
-	InvokeRepeating("spawn_enemy", 2, 0.5);
+	InvokeRepeating("spawn_enemy", 2, 0.2);
 }
 
 function spawn_enemy () {
