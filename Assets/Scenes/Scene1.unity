@@ -115,6 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3294215168c078408a1a73ee1b1101e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  answer_int: 0
 --- !u!102 &22166535
 TextMesh:
   serializedVersion: 3
@@ -599,11 +600,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2108135111}
-  - {fileID: 1949062638}
+  - {fileID: 1440690334}
   - {fileID: 154950909}
   - {fileID: 2002330316}
   - {fileID: 625729183}
-  - {fileID: 1440690334}
+  - {fileID: 1949062638}
   - {fileID: 550504850}
   - {fileID: 1704368909}
   - {fileID: 1858959368}
@@ -812,6 +813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3294215168c078408a1a73ee1b1101e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  answer_int: 0
 --- !u!102 &474751024
 TextMesh:
   serializedVersion: 3
@@ -897,6 +899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3294215168c078408a1a73ee1b1101e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  answer_int: 0
 --- !u!102 &492410065
 TextMesh:
   serializedVersion: 3
@@ -1117,6 +1120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3294215168c078408a1a73ee1b1101e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  answer_int: 0
 --- !u!1 &612048087
 GameObject:
   m_ObjectHideFlags: 0
@@ -1158,6 +1162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3294215168c078408a1a73ee1b1101e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  answer_int: 0
 --- !u!102 &612048090
 TextMesh:
   serializedVersion: 3
@@ -1760,6 +1765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3294215168c078408a1a73ee1b1101e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  answer_int: 0
 --- !u!102 &968083330
 TextMesh:
   serializedVersion: 3
@@ -2087,6 +2093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3294215168c078408a1a73ee1b1101e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  answer_int: 0
 --- !u!102 &1184783890
 TextMesh:
   serializedVersion: 3
@@ -2252,6 +2259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3294215168c078408a1a73ee1b1101e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  answer_int: 0
 --- !u!102 &1265049789
 TextMesh:
   serializedVersion: 3
@@ -2882,6 +2890,7 @@ GameObject:
   - 4: {fileID: 1442500759}
   - 23: {fileID: 1442500761}
   - 102: {fileID: 1442500760}
+  - 114: {fileID: 1442500762}
   m_Layer: 0
   m_Name: Answer
   m_TagString: Answer
@@ -2942,6 +2951,17 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
+--- !u!114 &1442500762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1442500758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f174c3ca88ff3c48ab4923218786edd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1475791394
 GameObject:
   m_ObjectHideFlags: 0
@@ -3213,18 +3233,18 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1921043023}
-  - {fileID: 989212710}
-  - {fileID: 1867062126}
-  - {fileID: 1306667151}
   - {fileID: 31751467}
-  - {fileID: 221233604}
-  - {fileID: 997836381}
-  - {fileID: 1396009243}
   - {fileID: 74493897}
-  - {fileID: 1475791395}
-  - {fileID: 860490488}
+  - {fileID: 221233604}
+  - {fileID: 989212710}
+  - {fileID: 1306667151}
+  - {fileID: 1396009243}
   - {fileID: 267375321}
+  - {fileID: 1867062126}
+  - {fileID: 860490488}
+  - {fileID: 1475791395}
+  - {fileID: 997836381}
+  - {fileID: 1921043023}
   m_Father: {fileID: 1712398522}
 --- !u!1001 &1665296588
 Prefab:
@@ -3351,6 +3371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3294215168c078408a1a73ee1b1101e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  answer_int: 0
 --- !u!1 &1704368908
 GameObject:
   m_ObjectHideFlags: 0
@@ -3988,6 +4009,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3294215168c078408a1a73ee1b1101e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  answer_int: 0
 --- !u!102 &1974080712
 TextMesh:
   serializedVersion: 3
@@ -4255,6 +4277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3294215168c078408a1a73ee1b1101e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  answer_int: 0
 --- !u!102 &2091361696
 TextMesh:
   serializedVersion: 3
@@ -4431,6 +4454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3294215168c078408a1a73ee1b1101e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  answer_int: 0
 --- !u!102 &2136423988
 TextMesh:
   serializedVersion: 3

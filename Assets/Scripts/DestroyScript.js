@@ -1,6 +1,5 @@
 ﻿#pragma strict
 
-
 var answer_int : int;
 answer_int = get_answer();
 
@@ -23,21 +22,30 @@ function updateScore (){
 function Update () {
 	if (Input.GetMouseButtonDown(0))
      {
-       Debug.Log(Camera.main.ScreenPointToRay(Input.mousePosition));
+       //Debug.Log(Camera.main.ScreenPointToRay(Input.mousePosition));
        //make sure you have a camera in the scene tagged as 'MainCamera'
        var hitm : RaycastHit2D = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
        if(hitm.collider != null)
        
        {
        	 var splitter : String[] = hitm.collider.gameObject.GetComponentInChildren(TextMesh).text.Split("+"[0]);
-       	 var my_answer : int = parseInt(splitter[0]) + parseInt(splitter[1]);
+       	 var value1 : int = parseInt(splitter[0]);
+       	 var value2 : int = parseInt(splitter[1]);
+       	 var my_answer : int = value1 + value2;
        	 
          if(answer_int == my_answer){
+         	Debug.Log("Answer: " + answer_int);
+         	Debug.Log("Problem value: " + my_answer);
          	Destroy (hitm.collider.gameObject);
          	updateScore();
          }
        }
-     }
+    }
+    var y : int = -12;
+    var y_posn : float = transform.position.y;
+    if (y > y_posn){
+    	Destroy(this.gameObject);
+    }
 }
 
 
