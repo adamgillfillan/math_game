@@ -1,20 +1,14 @@
 ﻿#pragma strict
-var answer_int : int;
-answer_int = get_answer();
 
 function get_answer(){
-	var answer_object : GameObject;
 	var my_answer : int;
-	var answer_object_text : String;
-	answer_object = GameObject.FindWithTag("Answer");
-	answer_object_text = answer_object.GetComponent(TextMesh).text;
-	
-	my_answer = parseInt(answer_object_text);
+	my_answer = GameObject.FindWithTag("GameManager").GetComponent(GetAnswer).get_answer();
 	return my_answer;
 }
 
-
 function Start () {
+	var answer_int : int = get_answer();
+
 	//Generate random numbers for math problem
 	var randomnumber1 = Random.Range(1, 10);
 	var randomnumber2 = Random.Range(1, 10);
@@ -32,4 +26,5 @@ function Start () {
 			Destroy(this.transform.parent.gameObject);
 		}
 	}
+	//Make function to handle 1, 2, 3
 }

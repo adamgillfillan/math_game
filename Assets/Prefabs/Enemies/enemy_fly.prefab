@@ -11,6 +11,7 @@ GameObject:
   - 23: {fileID: 2300000}
   - 102: {fileID: 10200000}
   - 114: {fileID: 11400004}
+  - 60: {fileID: 6000002}
   m_Layer: 0
   m_Name: math_problem
   m_TagString: MathProblem
@@ -56,7 +57,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.26185513, y: 7.07486057, z: 0}
+  m_LocalPosition: {x: -1.51706839, y: 13.9152298, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 0}
   m_Children:
   - {fileID: 400000}
@@ -118,6 +119,22 @@ PolygonCollider2D:
       - {x: .219999999, y: -.179999992}
       - {x: .359999985, y: 0}
       - {x: .359999985, y: .179999992}
+--- !u!60 &6000002
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Poly:
+    m_Paths:
+    - - {x: 5.25000143, y: 2.60521722}
+      - {x: 10.2430487, y: -1.02244401}
+      - {x: 8.3358736, y: -6.89212322}
+      - {x: 2.16412807, y: -6.89212275}
+      - {x: .256954461, y: -1.02244318}
 --- !u!102 &10200000
 TextMesh:
   serializedVersion: 3
@@ -125,7 +142,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Text: 2 + 4
+  m_Text: 0 + 0
   m_OffsetZ: 2
   m_CharacterSize: 1
   m_LineSpacing: 1
