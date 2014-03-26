@@ -27,7 +27,6 @@ function Update () {
         var hitm : RaycastHit2D = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
         if(hitm.collider != null)
        {
-       	 Debug.Log("Collider: " + hitm.collider);
        	 var splitter : String[] = hitm.collider.gameObject.GetComponentInChildren(TextMesh).text.Split("+"[0]);
        	 var value1 : int = parseInt(splitter[0]);
        	 var value2 : int = parseInt(splitter[1]);

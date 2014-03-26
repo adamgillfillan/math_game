@@ -15,7 +15,7 @@ function get_current_score(){
 	var split : String[] = my_object.Split(" "[0]);
 	
 	var current_score : int = parseInt(split[1]); 
-	Debug.Log("Current score: " + current_score);
+	//Debug.Log("Current score: " + current_score);
 	return current_score;
 }
 
@@ -38,8 +38,8 @@ function Update () {
        	 var my_answer : int = value1 + value2;
        	 
          if(answer_int == my_answer){
-         	Debug.Log("Answer: " + answer_int);
-         	Debug.Log("Problem value: " + my_answer);
+         	//Debug.Log("Answer: " + answer_int);
+         	//Debug.Log("Problem value: " + my_answer);
          	add_score(1);
          }
        }
