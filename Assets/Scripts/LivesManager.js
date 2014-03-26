@@ -25,7 +25,12 @@ function remove_life(){
 	GetComponent(TextMesh).text = "Lives: " + lives;
 }
 
+function game_over(){
+	Application.LoadLevel("Summary"); 
+}
+
 function Update () {
+	var current_lives = get_current_lives();
 	if (Input.GetMouseButtonDown(0))
      {
      	var answer_int : int = get_answer();
@@ -44,4 +49,8 @@ function Update () {
          }
         }
     }
+    if (current_lives < 1){
+    	game_over();
+    }
+    
 }

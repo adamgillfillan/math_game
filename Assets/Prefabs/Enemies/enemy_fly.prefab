@@ -106,8 +106,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .720000029, y: .612525344}
-  m_Center: {x: 0, y: -.126261711}
+  m_Size: {x: .720000029, y: .60104692}
+  m_Center: {x: 0, y: -.120522499}
 --- !u!102 &10200000
 TextMesh:
   serializedVersion: 3
