@@ -26,7 +26,8 @@ function remove_life(){
 }
 
 function game_over(){
-	Application.LoadLevel("Summary"); 
+	transform.parent.gameObject.AddComponent("GameOverScript");
+	//Application.LoadLevel("Summary"); 
 }
 
 function Update () {
