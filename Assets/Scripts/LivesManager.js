@@ -29,7 +29,6 @@ function Update () {
 	if (Input.GetMouseButtonDown(0))
      {
      	var answer_int : int = get_answer();
-		
         var hitm : RaycastHit2D = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
         if(hitm.collider != null)
         {

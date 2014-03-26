@@ -11,7 +11,6 @@ GameObject:
   - 23: {fileID: 2300000}
   - 102: {fileID: 10200000}
   - 114: {fileID: 11400004}
-  - 60: {fileID: 6000002}
   m_Layer: 0
   m_Name: math_problem
   m_TagString: MathProblem
@@ -31,7 +30,7 @@ GameObject:
   - 50: {fileID: 5000000}
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
-  - 60: {fileID: 6000000}
+  - 61: {fileID: 6100000}
   m_Layer: 0
   m_Name: enemy_fly
   m_TagString: Untagged
@@ -98,8 +97,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!60 &6000000
-PolygonCollider2D:
+--- !u!61 &6100000
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -107,34 +106,8 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Poly:
-    m_Paths:
-    - - {x: 0, y: .179999992}
-      - {x: -.0799999982, y: .140000001}
-      - {x: -.129999995, y: .179999992}
-      - {x: -.319999993, y: .179999992}
-      - {x: -.359999985, y: .159999996}
-      - {x: -.359999985, y: 0}
-      - {x: -.179999992, y: -.179999992}
-      - {x: .219999999, y: -.179999992}
-      - {x: .359999985, y: 0}
-      - {x: .359999985, y: .179999992}
---- !u!60 &6000002
-PolygonCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Poly:
-    m_Paths:
-    - - {x: 5.25000143, y: 2.60521722}
-      - {x: 10.2430487, y: -1.02244401}
-      - {x: 8.3358736, y: -6.89212322}
-      - {x: 2.16412807, y: -6.89212275}
-      - {x: .256954461, y: -1.02244318}
+  m_Size: {x: .720000029, y: .612525344}
+  m_Center: {x: 0, y: -.126261711}
 --- !u!102 &10200000
 TextMesh:
   serializedVersion: 3
@@ -180,7 +153,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ac02415774ed5b44b8fd1d17c6c4c8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  answer_int: 0
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -192,7 +164,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3294215168c078408a1a73ee1b1101e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  answer_int: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
