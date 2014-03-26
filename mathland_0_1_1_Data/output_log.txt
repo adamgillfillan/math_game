@@ -1,0 +1,39 @@
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [aticfx32.dll 8.17.10.1191]
+    Renderer: AMD Radeon HD 6800 Series
+    Vendor:   ATI
+    VRAM:     1010 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 INTZ=1 RAWZ=0 NULL=1 RESZ=1 SlowINTZ=1
+Begin MonoManager ReloadAssembly
+Platform assembly: E:\Users\Adam\Documents\Development\Unity\IGBLE\math_game\mathland_0_1_1_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\Users\Adam\Documents\Development\Unity\IGBLE\math_game\mathland_0_1_1_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\Users\Adam\Documents\Development\Unity\IGBLE\math_game\mathland_0_1_1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\Users\Adam\Documents\Development\Unity\IGBLE\math_game\mathland_0_1_1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\Users\Adam\Documents\Development\Unity\IGBLE\math_game\mathland_0_1_1_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading E:\Users\Adam\Documents\Development\Unity\IGBLE\math_game\mathland_0_1_1_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+- Completed reload, in  0.040 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+UnloadTime: 0.283978 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 226.
+Total: 0.606680 ms (FindLiveObjects: 0.015009 ms CreateObjectMapping: 0.006904 ms MarkObjects: 0.104765 ms  DeleteObjects: 0.010806 ms)
+
+Platform assembly: E:\Users\Adam\Documents\Development\Unity\IGBLE\math_game\mathland_0_1_1_Data\Managed\Boo.Lang.dll (this message is harmless)
+Platform assembly: E:\Users\Adam\Documents\Development\Unity\IGBLE\math_game\mathland_0_1_1_Data\Managed\UnityScript.Lang.dll (this message is harmless)
+UnloadTime: 0.910171 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 227.
+Total: 1.408484 ms (FindLiveObjects: 0.016210 ms CreateObjectMapping: 0.012007 ms MarkObjects: 0.594373 ms  DeleteObjects: 0.005403 ms)
+
+UnloadTime: 0.781690 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 122.
+Total: 11.061346 ms (FindLiveObjects: 0.011106 ms CreateObjectMapping: 0.012007 ms MarkObjects: 0.705743 ms  DeleteObjects: 9.589822 ms)
+

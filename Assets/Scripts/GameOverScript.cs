@@ -19,7 +19,7 @@ public class GameOverScript : MonoBehaviour
 			buttonWidth,
 			buttonHeight
 			),
-			"Retry!"
+			"Play Again!"
 			)
 			)
 		{

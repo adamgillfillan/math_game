@@ -25,7 +25,13 @@ function add_score(value : int){
 	GetComponent(TextMesh).text = "Score: " + score;
 }
 
+function game_over(){
+	transform.parent.gameObject.AddComponent("GameOverScript");
+
+}
+
 function Update () {
+	var current_score = get_current_score();
 	if (Input.GetMouseButtonDown(0))
      {
         var answer_int : int = get_answer();
@@ -43,5 +49,8 @@ function Update () {
          	add_score(1);
          }
        }
+    }
+    if (current_score > 9){
+    	game_over();
     }
 }
