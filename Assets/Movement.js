@@ -15,16 +15,16 @@ function Update () {
 	var my_score : int = get_score();
 	movement = Vector3(speed.x * direction.x, speed.y * direction.y, 0);
 	
-	if (my_score > 20){
-		movement *= Time.deltaTime+ .02;
+	if (my_score > 40){
+		movement *= Time.deltaTime+ .012;
 		transform.Translate(movement);
 	}
-	if (my_score > 10){
-		movement *= Time.deltaTime + .012;
+	if (my_score > 20){
+		movement *= Time.deltaTime + .008;
 		transform.Translate(movement);
 	}
 	if (my_score > 5){
-		movement *= Time.deltaTime + .008;
+		movement *= Time.deltaTime + .004;
 		transform.Translate(movement);
 	}
 	if (my_score >= 0){
