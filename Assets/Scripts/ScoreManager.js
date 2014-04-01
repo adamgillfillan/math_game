@@ -50,7 +50,7 @@ function Update () {
          }
        }
     }
-    if (current_score > 9){
+    if (current_score > 49){
     	game_over();
     }
 }
