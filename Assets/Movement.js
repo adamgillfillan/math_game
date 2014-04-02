@@ -16,7 +16,7 @@ function Update () {
 	movement = Vector3(speed.x * direction.x, speed.y * direction.y, 0);
 	
 	if (my_score > 40){
-		movement *= Time.deltaTime+ .012;
+		movement *= Time.deltaTime+ .016;
 		transform.Translate(movement);
 	}
 	if (my_score > 20){

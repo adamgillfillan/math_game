@@ -16,7 +16,7 @@ function Start () {
 	
 	//Math problems that are correct should appear more often than those that are incorrect.
 	var my_rand = Random.Range(0.0, 1.0);
-	var threshold : float = 0.9;
+	var threshold : float = 0.85;
 	//Debug.Log(my_rand);
 
 	GetComponent(TextMesh).text = randomnumber1 + " + " + randomnumber2;

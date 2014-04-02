@@ -22,7 +22,7 @@ function update_interval () {
 	var my_time : float;
 	//if (my_score > 0 && my_score <= 3){
 	if (my_score > 40){
-		my_time = .1;
+		my_time = .15;
 		InvokeRepeating("spawn_enemy", 0, my_time);
 		Debug.Log("My time should be 0.02: " + my_time);
 	}
@@ -37,7 +37,7 @@ function update_interval () {
 		Debug.Log("My time should be .1: " + my_time);
 	}
 	if (my_score >= 0){
-		my_time = .5;
+		my_time = .4;
 		InvokeRepeating("spawn_enemy", 0, my_time);
 		Debug.Log("My time should be .5: " + my_time);
 	}
