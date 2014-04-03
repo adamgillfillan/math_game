@@ -38,8 +38,9 @@ function game_over(){
 function save_correct_answer(correct_answer_list : Array, math_answer : String){
 	correct_answer_list.push(math_answer);
 	Debug.Log(correct_answer_list);
-	
+	//return correct_answer_list;
 }
+
 
 function Update () {
 	var current_score = get_current_score();

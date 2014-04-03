@@ -38,8 +38,13 @@ function game_over(){
 function save_incorrect_answer(incorrect_answer_list : Array, math_answer : String){
 	incorrect_answer_list.push(math_answer);
 	Debug.Log(incorrect_answer_list);
+	//return incorrect_answer_list;
 }
-
+//
+//function return_incorrect_answer_list(){
+//	return save_correct_answer(correct_answer_list, math_answer);
+//}
+//var my_list = new Array();
 function Update () {
 	var current_lives = get_current_lives();
 	if (Input.GetMouseButtonDown(0))
@@ -63,6 +68,7 @@ function Update () {
         }
     }
     if (current_lives < 1){
+    	//my_list = save_incorrect_answer(incorrect_answer_list, 0);
     	game_over();
     }
     
