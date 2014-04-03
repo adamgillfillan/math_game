@@ -8,6 +8,9 @@ function get_answer(){
 var correct_answer_list = new Array();
 function Start () {
 	GetComponent(TextMesh).text = "Score: " + 0;
+	Invoke("initialize", 1);
+}
+function initialize() {
 	var answer_int : int = get_answer();
 	correct_answer_list.push(answer_int);
 }
@@ -33,7 +36,6 @@ function game_over(){
 
 
 function save_correct_answer(correct_answer_list : Array, math_answer : String){
-	//var list = [math_problem];
 	correct_answer_list.push(math_answer);
 	Debug.Log(correct_answer_list);
 	

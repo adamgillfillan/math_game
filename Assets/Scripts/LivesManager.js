@@ -8,6 +8,9 @@ function get_answer(){
 var incorrect_answer_list = new Array();
 function Start () {
 	GetComponent(TextMesh).text = "Lives: " + 3;
+	Invoke("initialize", 1);
+}
+function initialize(){
 	var answer_int : int = get_answer();
 	incorrect_answer_list.push(answer_int);
 }
