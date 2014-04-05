@@ -6,6 +6,17 @@ function get_answer(){
 	return my_answer;
 }
 
+//function load_incorrect_answer_list(){
+//	var my_script : GameOverScript;
+//	var temp : String = PlayerPrefs.GetString("IncorrectAnswers");
+//	var tempArray : String[] = temp.Split("*".ToCharArray());
+// 
+//	for (var i=1; i < tempArray.length;i++){
+//	   my_script.my_incorrect_answer_list2[i]=System.Int32.Parse(tempArray[i]);
+//	}
+//	return my_script.my_incorrect_answer_list2;
+//}
+
 function Start () {
 	var answer_int : int = get_answer();
 
@@ -26,5 +37,6 @@ function Start () {
 			Destroy(this.transform.parent.gameObject);
 		}
 	}
+	//Debug.Log(load_incorrect_answer_list());
 	//Make function to handle 1, 2, 3
 }

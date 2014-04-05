@@ -1,5 +1,4 @@
-﻿
-function OnGUI()
+﻿function OnGUI()
 {
 	var buttonWidth = 120;
 	var buttonHeight = 60;
@@ -16,6 +15,9 @@ function OnGUI()
 		Application.LoadLevel("Menu");
 	}
 }
+//var coordinates = Vector2(.4, .2);
+//PlayerPrefsX.SetVector2 ("Coords", coordinates);
+//Debug.Log(PlayerPrefsX.GetVector2("Coords"));
 
 function get_incorrect_summary_text(){
 	var my_summary_text : TextMesh;
@@ -27,9 +29,42 @@ function get_incorrect_summary_list(){
 	my_object = GameObject.FindWithTag("Lives").GetComponent("LivesManager");
 	return my_object.incorrect_answer_list;
 }
-
-
-
+//var my_incorrect_answer_list2 : Array;
+//function save_incorrect_list(){
+//	my_incorrect_answer_list2 = get_incorrect_summary_list();
+//	//var list_length = my_incorrect_answer_list.length();
+//	var temp : String = "";
+//	for (var i=0; i < my_incorrect_answer_list2.length;i++){
+//		if(i!=my_incorrect_answer_list2.length-1){
+//		
+//			temp+=my_incorrect_answer_list2[i].ToString()+"*";
+//    	}
+//    	else{
+//    		temp+=my_incorrect_answer_list2[i].ToString();
+//    	}
+//	}
+//	PlayerPrefs.SetString("IncorrectAnswers", temp);
+//	Debug.Log(my_incorrect_answer_list2);
+//	//PlayerPrefsX.SetStringArray("IncorrectAnswers", my_incorrect_answer_list);
+//}
+//function load_incorrect_answer_list(){
+//	//var my_script : GameOverScript;
+//	var temp : String = PlayerPrefs.GetString("IncorrectAnswers");
+//	var tempArray = temp.Split("*".ToCharArray());
+//	var newArray : Array;
+//	//var tempArray : String[] = temp.Split("*".ToCharArray());
+//	//Debug.Log(tempArray);
+//	//return tempArray;
+//	//Debug.Log(temp);
+////	return temp;
+//	
+// 
+//	for (var i=0; i < temp.length;i++){
+//	   newArray.Add(tempArray[i]);
+//	}
+//	return newArray;
+////	return my_script.my_incorrect_answer_list2;
+//}
 function create_incorrect_summary_text(){
 	var my_incorrect_answer_list : Array = get_incorrect_summary_list();
 	var final_text : String;
@@ -40,11 +75,8 @@ function create_incorrect_summary_text(){
 		final_text += ("\n" + my_incorrect_answer_list[i]);
 	}
 	
-	
-	
 	return final_text;
 }
-
 
 function get_correct_summary_text(){
 	var my_summary_text : TextMesh;
@@ -68,10 +100,9 @@ function create_correct_summary_text(){
 		final_text += ("\n" + my_correct_answer_list[i]);
 	}
 	
-	
-	
 	return final_text;
 }
+
 function Start(){
 	var incorrect_summary_text : TextMesh = get_incorrect_summary_text();
 	var incorrect_final_text : String = create_incorrect_summary_text();
@@ -81,4 +112,8 @@ function Start(){
 	var correct_summary_text : TextMesh = get_correct_summary_text();
 	var correct_final_text : String = create_correct_summary_text();
 	correct_summary_text.text = correct_final_text;
+	
+	
+	//save_incorrect_list();
+	//load_incorrect_answer_list();
 }

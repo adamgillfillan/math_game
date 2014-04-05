@@ -45,6 +45,8 @@ function save_incorrect_answer(incorrect_answer_list : Array, math_answer : Stri
 //	return save_correct_answer(correct_answer_list, math_answer);
 //}
 //var my_list = new Array();
+
+
 function Update () {
 	var current_lives = get_current_lives();
 	if (Input.GetMouseButtonDown(0))

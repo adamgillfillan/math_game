@@ -2,6 +2,22 @@
 
 var enemy_fly : GameObject;
 
+//function load_incorrect_answer_list(){
+//	var my_script : GameOverScript;
+//	var temp : String = PlayerPrefs.GetString("InventoryItems");
+//	var tempArray : String[] = temp.Split("*".ToCharArray());
+// 
+//	for (var i=1; i < tempArray.length;i++){
+//	   my_script.my_incorrect_answer_list2[i]=System.Int32.Parse(tempArray[i]);
+//	}
+//	Debug.Log(my_script.my_incorrect_answer_list2);
+//}
+
+//function Start() {
+
+	//Invoke("load_incorrect_answer_list", .5);
+
+//}
 
 function spawn_enemy () {
 	var x : float = Random.Range(-8.8, 8.8);

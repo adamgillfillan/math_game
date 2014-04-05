@@ -42,6 +42,13 @@ function save_correct_answer(correct_answer_list : Array, math_answer : String){
 }
 
 
+function save(math_prob : int){
+	var my_string : String = "" + math_prob.ToString();
+    PlayerPrefs.SetInt(my_string, math_prob);
+    Debug.Log(my_string);
+    Debug.Log(math_prob);
+}
+
 function Update () {
 	var current_score = get_current_score();
 	if (Input.GetMouseButtonDown(0))
@@ -64,7 +71,9 @@ function Update () {
          }
        }
     }
-    if (current_score > 49){
+    if (current_score > 0){
+    	var my_true_answer : int = get_answer();
+    	save(my_true_answer);
     	game_over();
     }
 }
