@@ -20,38 +20,95 @@ function load_saved_variable(){
 	level_8 = PlayerPrefs.GetInt("8");
 	level_9 = PlayerPrefs.GetInt("9");
 	level_10 = PlayerPrefs.GetInt("10");
-	if(level_2 != 0){
-		Debug.Log("2 works!");
-	}
-	if(level_3 != 0){
-		Debug.Log("3 works!");
-	}
-	if(level_4 != 0){
-		Debug.Log("4 works!");
-	}
-	if(level_5 != 0){
-		Debug.Log("5 works!");
-	}
-	if(level_6 != 0){
-		Debug.Log("6 works!");
-	}
-	if(level_7 != 0){
-		Debug.Log("7 works!");
-	}
-	if(level_8 != 0){
-		Debug.Log("8 works!");
-	}
-	if(level_9 != 0){
-		Debug.Log("9 works!");
-	}
-	if(level_10 != 0){
-		Debug.Log("10 works!");
-	}
 }
 
 function Start () {
 	var randomnumber1 = Random.Range(2, 10);
-
-	GetComponent(TextMesh).text = randomnumber1.ToString();
+	
+	var threshold_23 : float = 0.80;
+	var threshold_45 : float = 0.60;
+	var randomnumber2 = Random.Range(0.0, 1.0);
+	var randomnumber3 = Random.Range(6, 10);
+	Debug.Log("Number 1: " + randomnumber1);
+	Debug.Log("Number 2: " + randomnumber2);
+	Debug.Log("Number 3: " + randomnumber3);
+	
 	load_saved_variable();
+	
+	if (randomnumber1 == 2){
+		if(level_2 != 0){
+			Debug.Log("2 works!");
+			if (randomnumber2 > threshold_23){
+				Debug.Log("Random float" + randomnumber2);
+				GetComponent(TextMesh).text = randomnumber1.ToString();
+			}
+			else{
+				Debug.Log("I am less than my threshold!");
+				GetComponent(TextMesh).text = randomnumber3.ToString();
+			}
+		}
+		else{
+			GetComponent(TextMesh).text = randomnumber1.ToString();
+		}
+	}
+	if (randomnumber1 == 3){
+		if(level_3 != 0){
+			Debug.Log("3 works!");
+			if (randomnumber2 > threshold_23){
+				Debug.Log("Random float" + randomnumber2);
+				GetComponent(TextMesh).text = randomnumber1.ToString();
+			}
+			else{
+				Debug.Log("I am less than my threshold!");
+				GetComponent(TextMesh).text = randomnumber3.ToString();
+			}
+		}
+		else{
+			GetComponent(TextMesh).text = randomnumber1.ToString();
+		}
+	}
+	if (randomnumber1 == 4){
+		if(level_4 != 0){
+			Debug.Log("4 works!");
+			if (randomnumber2 > threshold_45){
+				Debug.Log("Random float" + randomnumber2);
+				GetComponent(TextMesh).text = randomnumber1.ToString();
+			}
+			else{
+				Debug.Log("I am less than my threshold!");
+				GetComponent(TextMesh).text = randomnumber3.ToString();
+			}
+		}
+		else{
+			GetComponent(TextMesh).text = randomnumber1.ToString();
+		}
+	}
+	if (randomnumber1 == 5){
+		if(level_5 != 0){
+			Debug.Log("5 works!");
+			if (randomnumber2 > threshold_45){
+				Debug.Log("Random float" + randomnumber2);
+				GetComponent(TextMesh).text = randomnumber1.ToString();
+			}
+			else{
+				Debug.Log("I am less than my threshold!");
+				GetComponent(TextMesh).text = randomnumber3.ToString();
+			}
+		}
+		else{
+			GetComponent(TextMesh).text = randomnumber1.ToString();
+		}
+	}
+	if (randomnumber1 == 6){
+		GetComponent(TextMesh).text = randomnumber1.ToString();
+	}
+	if (randomnumber1 == 7){
+		GetComponent(TextMesh).text = randomnumber1.ToString();
+	}
+	if (randomnumber1 == 8){
+		GetComponent(TextMesh).text = randomnumber1.ToString();
+	}
+	if (randomnumber1 == 9){
+		GetComponent(TextMesh).text = randomnumber1.ToString();
+	}
 }
