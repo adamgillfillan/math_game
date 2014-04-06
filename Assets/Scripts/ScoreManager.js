@@ -1,5 +1,8 @@
 #pragma strict
-
+function delete_player_prefs(){
+	PlayerPrefs.DeleteAll();
+	Debug.Log("PlayerPrefs deleted");	
+}
 function get_answer(){
 	var my_answer : int;
 	my_answer = GameObject.FindWithTag("GameManager").GetComponent(GetAnswer).get_answer();
@@ -9,6 +12,7 @@ var correct_answer_list = new Array();
 function Start () {
 	GetComponent(TextMesh).text = "Score: " + 0;
 	Invoke("initialize", 1);
+	//delete_player_prefs();
 }
 function initialize() {
 	var answer_int : int = get_answer();
@@ -45,10 +49,11 @@ function save_correct_answer(correct_answer_list : Array, math_answer : String){
 function save(math_prob : int){
 	var my_string : String = "" + math_prob.ToString();
     PlayerPrefs.SetInt(my_string, math_prob);
-    Debug.Log(my_string);
-    Debug.Log(math_prob);
+    //Debug.Log(my_string);
+    //Debug.Log(math_prob);
 }
 
+var win : int = 0;
 function Update () {
 	var current_score = get_current_score();
 	if (Input.GetMouseButtonDown(0))
@@ -71,9 +76,10 @@ function Update () {
          }
        }
     }
-    if (current_score > 0){
+    if (current_score > 24){
     	var my_true_answer : int = get_answer();
     	save(my_true_answer);
+    	win = 1;
     	game_over();
     }
 }

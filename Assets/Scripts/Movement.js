@@ -15,15 +15,15 @@ function Update () {
 	var my_score : int = get_score();
 	movement = Vector3(speed.x * direction.x, speed.y * direction.y, 0);
 	
-	if (my_score > 40){
-		movement *= Time.deltaTime+ .016;
+	if (my_score > 19){
+		movement *= Time.deltaTime+ .008;
 		transform.Translate(movement);
 	}
-	if (my_score > 20){
-		movement *= Time.deltaTime + .008;
+	if (my_score > 9){
+		movement *= Time.deltaTime + .006;
 		transform.Translate(movement);
 	}
-	if (my_score > 5){
+	if (my_score > 4){
 		movement *= Time.deltaTime + .004;
 		transform.Translate(movement);
 	}
@@ -31,5 +31,5 @@ function Update () {
 		movement *= Time.deltaTime;
 		transform.Translate(movement);
 	}
-	Debug.Log("My speed is: " + speed);
+	//Debug.Log("My speed is: " + speed);
 }

@@ -90,6 +90,16 @@ function get_correct_summary_list(){
 	return my_object.correct_answer_list;
 }
 
+function display_win_text(){
+	var my_text : TextMesh;
+	my_text = GameObject.FindWithTag("Win").GetComponent(TextMesh);
+	var my_score_manager : ScoreManager = GameObject.FindWithTag("Score").GetComponent("ScoreManager");
+	var my_win_variable = my_score_manager.win;
+	//Debug.Log("Win: " + my_win_variable);
+	if (my_win_variable == 1){
+		my_text.text = "You Win!";
+	}
+}
 function create_correct_summary_text(){
 	var my_correct_answer_list : Array = get_correct_summary_list();
 	var final_text : String;
@@ -113,6 +123,7 @@ function Start(){
 	var correct_final_text : String = create_correct_summary_text();
 	correct_summary_text.text = correct_final_text;
 	
+	display_win_text();
 	
 	//save_incorrect_list();
 	//load_incorrect_answer_list();
