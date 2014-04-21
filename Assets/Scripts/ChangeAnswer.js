@@ -1,5 +1,6 @@
 ﻿#pragma strict
-
+// Script to change the answer of the game. Chooses answers based on a weighted probability dependent upon the student's progress.
+// If a student has completed easier answers like "2" or "3", for example, those answers are not likely to come up again.
 var level_2 : int;
 var level_3 : int;
 var level_4 : int;
@@ -23,6 +24,7 @@ function load_saved_variable(){
 }
 
 function Start () {
+	// Create answer randomly
 	var randomnumber1 = Random.Range(2, 10);
 	
 	var threshold_23 : float = 0.80;
@@ -35,6 +37,7 @@ function Start () {
 	
 	load_saved_variable();
 	
+	// Select only the answer that we want, based on the student model.
 	if (randomnumber1 == 2){
 		if(level_2 != 0){
 			Debug.Log("2 works!");

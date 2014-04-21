@@ -1,5 +1,5 @@
 ﻿#pragma strict
-
+// A script that destroys the enemy game object (the fly) if the user clicks it with the mouse.
 
 function get_answer(){
 	var my_answer : int;
@@ -13,6 +13,8 @@ function get_answer(){
 //
 //}
 
+
+// Function that removes the enemies that have gone below the playing screen
 function remove_objects_off_screen(){
 	var threshold_y : int = -12;
     var y_posn : float = transform.position.y;
@@ -20,6 +22,7 @@ function remove_objects_off_screen(){
     	Destroy(this.gameObject);
     }
 }
+
 function Update () {
 	if (Input.GetMouseButtonDown(0))
      {
@@ -27,6 +30,7 @@ function Update () {
         var hitm : RaycastHit2D = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
         if(hitm.collider != null)
        {
+       	 // Must parse the problem to separate values of "4 + 5"
        	 var splitter : String[] = hitm.collider.gameObject.GetComponentInChildren(TextMesh).text.Split("+"[0]);
        	 var value1 : int = parseInt(splitter[0]);
        	 var value2 : int = parseInt(splitter[1]);

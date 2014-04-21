@@ -1,4 +1,6 @@
 ﻿#pragma strict
+// A script that creates the math problems for the enemies based on a random weighted probability.
+// Problems that match the answer should appear more often than those that do not match the answer.
 
 function get_answer(){
 	var my_answer : int;
