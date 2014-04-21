@@ -1,4 +1,4 @@
-math_game
+Mathland
 =========
 Mathland is a game I created for CSC 591 - Intelligent Game Based Learning Environments (IGBLE). A class focused around the Computing Research Association's grand challenge to "provide a teacher for every learner." Artificial intelligent, intelligent tutoring systems, pedagogical agents, student modeling, affective computing, and human-computer interaction are just a few of the topics that IGBLE encompasses.
 
