@@ -1,7 +1,12 @@
 ﻿#pragma strict
 
+// Script used to spawn enemies.
+// Includes difficulty scaffolding. As the score increases, so to does the rate of enemies spawning and their falling speed.
+
 var enemy_fly : GameObject;
 
+
+// Function to instantiate the enemy
 function spawn_enemy () {
 	var x : float = Random.Range(-8.8, 8.8);
 	var y : float = 13.0;
@@ -16,6 +21,8 @@ function get_score(){
 	return my_score;
 }
 
+
+// Depending upon the score of the game, spawn enemies at differing rates as well as increase their falling speed
 function update_interval () {
 	var my_score : int = get_score();
 	var my_time : float;
@@ -46,6 +53,7 @@ var canceled : boolean = false;
 var canceled2 : boolean = false;
 var canceled3 : boolean = false;
 
+// Needed to cancel the previous invoke repeating functions
 function Update(){
 	var my_score : int = get_score();
 	if (begin == false){

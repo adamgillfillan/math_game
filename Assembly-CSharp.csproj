@@ -47,8 +47,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\MenuScript.cs" />
-     <Compile Include="Assets\Scripts\MoveScript.cs" />
-     <Compile Include="Assets\Scripts\SoundEffectsHelper.cs" />
      <Compile Include="Assets\Scripts\TutorialButtonScript2.cs" />
      <Compile Include="Assets\Scripts\TutorialButtonsScript.cs" />
      <Compile Include="Assets\Scripts\TutorialButtonsScript3.cs" />

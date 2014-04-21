@@ -1,5 +1,8 @@
 ﻿#pragma strict
 
+// Used to handle the student's lives in the game
+// If a student clicks an enemy whose problem does not match the answer, -1 life
+
 function get_answer(){
 	var my_answer : int;
 	my_answer = GameObject.FindWithTag("GameManager").GetComponent(GetAnswer).get_answer();
@@ -30,11 +33,13 @@ function remove_life(){
 	GetComponent(TextMesh).text = "Lives: " + lives;
 }
 
+// Ends the game if called
 function game_over(){
 	transform.parent.gameObject.AddComponent("GameOverScript");
 	//Application.LoadLevel("Summary"); 
 }
 
+// Save the incorrect answer choice for the student model
 function save_incorrect_answer(incorrect_answer_list : Array, math_answer : String){
 	incorrect_answer_list.push(math_answer);
 	Debug.Log(incorrect_answer_list);
@@ -49,12 +54,14 @@ function Update () {
         var hitm : RaycastHit2D = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
         if(hitm.collider != null)
         {
+        // Must parse the text, for example "4 + 5" separate to int values and remove the "+"
          var my_text_answer : String = hitm.collider.gameObject.GetComponentInChildren(TextMesh).text;
        	 var splitter : String[] = hitm.collider.gameObject.GetComponentInChildren(TextMesh).text.Split("+"[0]);
        	 var value1 : int = parseInt(splitter[0]);
        	 var value2 : int = parseInt(splitter[1]);
        	 var my_answer : int = value1 + value2;
        	 
+       	 // Remove the life
          if(answer_int != my_answer){
          	//Debug.Log("Answer: " + answer_int);
          	//Debug.Log("Problem value: " + my_answer);

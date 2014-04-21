@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 
-/// <summary>
-/// Title screen script
-/// </summary>
+// Used to create the "Next!" button on the Tutorial scene
 public class TutorialButtonsScript : MonoBehaviour
 {
 	

@@ -1,4 +1,7 @@
-﻿function OnGUI()
+﻿// Script that loads when the game is over.
+// Displays a summary screen as well as a "Play Again" and "Back to Menu" buttons
+
+function OnGUI()
 {
 	var buttonWidth = 120;
 	var buttonHeight = 60;
@@ -90,6 +93,8 @@ function get_correct_summary_list(){
 	return my_object.correct_answer_list;
 }
 
+
+
 function display_win_text(){
 	var my_text : TextMesh;
 	my_text = GameObject.FindWithTag("Win").GetComponent(TextMesh);
@@ -113,6 +118,7 @@ function create_correct_summary_text(){
 	return final_text;
 }
 
+// Display the summary text when the game is over
 function Start(){
 	var incorrect_summary_text : TextMesh = get_incorrect_summary_text();
 	var incorrect_final_text : String = create_incorrect_summary_text();

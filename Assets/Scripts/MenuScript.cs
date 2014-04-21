@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
+// Script used by the Menu Scene to display the buttons
 
-/// <summary>
-/// Title screen script
-/// </summary>
 public class MenuScript : MonoBehaviour
 {
 

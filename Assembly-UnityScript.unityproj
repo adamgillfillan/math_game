@@ -54,7 +54,6 @@
      <Compile Include="Assets\Scripts\InvokeScript.js" />
      <Compile Include="Assets\Scripts\LivesManager.js" />
      <Compile Include="Assets\Scripts\Movement.js" />
-     <Compile Include="Assets\Scripts\ReturnText.js" />
      <Compile Include="Assets\Scripts\ScoreManager.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

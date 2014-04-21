@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 
-/// <summary>
-/// Title screen script
-/// </summary>
+// Used to create the "Play!" button on the final tutorial screen
 public class TutorialButtonsScript3 : MonoBehaviour
 {
 	

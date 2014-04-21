@@ -1,5 +1,6 @@
 ﻿#pragma strict
-
+// Script used to handle the movement speed of the enemies
+// Scaffolded difficulty according to the game score
 
 var speed : Vector2 = Vector2(0 , 2);
 var direction : Vector2 = Vector2(0, -1);

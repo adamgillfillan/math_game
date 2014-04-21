@@ -1,4 +1,10 @@
 #pragma strict
+
+// Script used to handle the scoring of the game. If a user selects a problem that
+// Matches the answer, +1 score. If the score reaches 25, end the game
+// Also used to contribute to the student model which answers the student beats
+
+// Used for debugging to reset the student model
 function delete_player_prefs(){
 	PlayerPrefs.DeleteAll();
 	Debug.Log("PlayerPrefs deleted");	
@@ -46,6 +52,7 @@ function save_correct_answer(correct_answer_list : Array, math_answer : String){
 }
 
 
+// Save the correct answer to the student model
 function save(math_prob : int){
 	var my_string : String = "" + math_prob.ToString();
     PlayerPrefs.SetInt(my_string, math_prob);
@@ -62,6 +69,7 @@ function Update () {
         var hitm : RaycastHit2D = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
         if(hitm.collider != null)
        {
+       	// Parse text for "4 + 5" for ex.
        	 var my_text_answer : String = hitm.collider.gameObject.GetComponentInChildren(TextMesh).text;
        	 var splitter : String[] = hitm.collider.gameObject.GetComponentInChildren(TextMesh).text.Split("+"[0]);
        	 var value1 : int = parseInt(splitter[0]);
@@ -76,6 +84,7 @@ function Update () {
          }
        }
     }
+    // Game over if score reaches 25
     if (current_score > 24){
     	var my_true_answer : int = get_answer();
     	save(my_true_answer);
